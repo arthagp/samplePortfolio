@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.menu-icon {
+    /* Gantikan property display ke none */
+    display:none;
+  }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+a{
+    text-decoration: none;
+}
+
+.logo-header h1, .navbar a{
+    opacity: 0.98;
+}
+
+.navbar a{
+    color: #FFFFFF;
+    padding: 0 7px;
+    margin-right: 20px;
+}
+
+.logo-header{
+    margin-left: 20px;
+    letter-spacing: 5px;
+}
+
+header{
+    font-weight: normal;
+    height: 65px;
+    background-color: #404146;
+}
+
+/* font-color(header,footer) */
+header, footer{
+    color: white;
+}
+
+/* BATAS HEADER AKHIR */
+img{
+    width: 20%;
+}
+.top-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 0;
+}
+
+.top-wrapper h1{
+    font-size: 150px;
+    opacity: 0.8;
+    letter-spacing: 4px;
+}
+
+.top-wrapper h2{
+    opacity: 0.8;
+    letter-spacing: 4px;
+}
+
+.titik{
+    font-family: "Lucida Grande";
+    color: #F1D00E;
+}
+
+/* ABOUT ME */
+
+.about-me{
+    background-color: #F4F4F4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.about-me h3{
+    font-weight: 900;
+}
+
+.about-me p {
+    margin: 40px 100px;
+    text-align: justify;
+}
+
+/* PROYEK CONTOH */
+
+.container{
+    padding: 80px 0 60px 0;
+}
+.heading{
+    text-align: center;
+}
+.project-contoh{
+    padding: 30px 0;
+    display: flex;
+}
+
+.heading h3, .icon p{
+    opacity: 0.8;
+}
+
+.icon img{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+}
+.icon p{
+    padding-top: 20px;
+}
+.icon .contoh{
+    width: 40%;
+    margin: auto 30.3%;
+    text-align: center;
+    
+}
+/* HUBUNGI SAYA */
+
+.hubungi-saya{
+    background-color:#F4F4F4;
+}
+
+.hubungi-saya .heading{
+    padding: 70px 0 30px 0;
+}
+
+input{
+    width: 800px;
+    height: 40px;
+}
+
+input, textarea{
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+button{
+    margin: 30px 0;
+    background-color: #F7E989;
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+textarea {
+    width: 800px;
+    height: 80px;
+    margin-top: 30px;
+  }
+  
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    opacity: 0.8;
+}
+
+/* FOOTER */
+footer{
+    justify-content: space-between;
+    font-weight: normal;
+    height: 150px;
+    background-color: #7C7D82;
+    display: flex;
+    
+}
+
+.logo-footer{
+    margin: 30px 0 0 30px;
+}
+.navbar-footer a{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    color: #FFFFFF;
+    padding: 0 7px;
+    margin-right: 20px;
+    opacity: 0.97;
+}
+
+
+
+
