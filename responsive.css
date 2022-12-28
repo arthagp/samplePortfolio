@@ -1,0 +1,32 @@
+@media all and (max-width:670px) {
+    *{
+        font-size: small;
+    }
+    .top-wrapper h1{
+        font-size: 30px;
+        
+    }
+
+    input, textarea, button{
+        width: 300px;
+    }
+    
+    .navbar{
+        display: none;
+    }
+    .project-contoh{
+        display: block;
+        width: 98%;
+    }
+
+    .icon img{
+        box-shadow: none;
+    }
+    .icon p{
+        padding: 5px 0;
+    }
+    /* .hubungi-saya heading{
+        padding-right: 100px;
+    } */
+}
+
