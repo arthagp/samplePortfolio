@@ -1,8 +1,8 @@
 /* ON SMARTPHONE */
 @media all and (max-width:670px) {
     nav {
-        display: none;
-/*         padding-right: 40px; */
+        /* display: none; */
+        padding-right: 40px;
     }
 
     .about-me-wrapper .container .content-tentangSaya{
@@ -18,6 +18,9 @@
         height: 40px;
     }
     
+    .card-project{
+        margin-left: 25%;
+    }
     textarea {
         width: 400px;
         height: 80px;
@@ -31,8 +34,9 @@
         flex-direction: column;
         padding-bottom: 55px;
     }
-    
+
     .container{
         width: 90%;
     }
+
 }

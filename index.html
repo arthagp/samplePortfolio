@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="icon" href="icon 32x32.png" type="image/png">
+    <link rel="icon" href="/icon 32x32.png" type="image/png">
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="gambar.png" />
+    <meta property="og:image" content="/gambar.png" />
     <meta property="og:url" content="https://arthagp.github.io/samplePortfolio/" />
     <meta property="og:title" content="NINJA KEN | Sample Portfolio..." />
     <meta property="og:description" content="This is my sample portfolio..." />
+    <script src="script.js"></script>
+    
     <title>Sample Portfolio</title>
 </head>
 <body>
@@ -32,7 +34,7 @@
             <h2>MY PORTFOLIO</h2>
             </div>
             <div class="gambar">
-                <img src="Ninja Ken.png" alt="">
+                <img src="/Ninja Ken.png" alt="">
             </div>
         </div>
     </div>
@@ -53,19 +55,25 @@
                 <h3>Proyek Saya</h3>
             </div>
             <div class="projects">
-                <div class="card-project">
-                    <img src="1.png" alt="">
+                <div class="card-project fade" style="display: block;">
+                    <img src="/1.png" alt="">
                     <p>image1</p>
                 </div>
-                <div class="card-project">
-                    <img src="2.png" alt="">
+                <div class="card-project fade">
+                    <img src="/2.png" alt="">
                     <p>image2</p>
                 </div>
-                <div class="card-project">
-                    <img src="3.png" alt="">
+                <div class="card-project fade">
+                    <img src="/3.png" alt="">
                     <p>image3</p>
                 </div>
-            </div>
+                <div class="card-project fade">
+                    <img src="/1.png" alt="">
+                    <p>image4</p>
+                </div>
+                <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+                <a class="next" onclick="updateSlide(1)">&#10095;</a>
+            </div>     
         </div>
     </div>
     <div class="form-wrapper">
