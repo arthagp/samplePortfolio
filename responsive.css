@@ -1,7 +1,7 @@
 /* ON SMARTPHONE */
 @media all and (max-width:670px) {
     nav {
-        /* display: none; */
+        display: none;
         padding-right: 40px;
     }
 
