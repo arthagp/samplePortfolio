@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="icon" href="icon 32x32.png" type="image/png">
+    <link rel="icon" href="/icon 32x32.png" type="image/png">
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/gambar.png" />
     <meta property="og:url" content="https://arthagp.github.io/samplePortfolio/" />
     <meta property="og:title" content="NINJA KEN | Sample Portfolio..." />
     <meta property="og:description" content="This is my sample portfolio..." />
-    <script src="script.js"></script>
-    
+
     <title>Sample Portfolio</title>
 </head>
+
 <body>
     <header>
         <div class="header-logo">
@@ -30,11 +31,11 @@
     <div class="jumbotron-wrapper">
         <div class="container">
             <div class="heading">
-            <h1>NINJA KEN<span>.</span></h1>
-            <h2>MY PORTFOLIO</h2>
+                <h1>NINJA KEN<span>.</span></h1>
+                <h2>MY PORTFOLIO</h2>
             </div>
             <div class="gambar">
-                <img src="Ninja Ken.png" alt="">
+                <img src="/Ninja Ken.png" alt="">
             </div>
         </div>
     </div>
@@ -44,8 +45,10 @@
                 <h3>Tentang Saya</h3>
             </div>
             <div class="content-tentangSaya">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus consequuntur optio fuga quis eius deserunt reprehenderit atque dolore? Eius, quod. Labore praesentium numquam dolorum perferendis impedit tempora voluptatem fugiat doloribus!
-                Ex distinctio necessitatibus quia deserunt. Ratione quia neque officia vel molestiae voluptas</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus consequuntur optio fuga quis eius
+                    deserunt reprehenderit atque dolore? Eius, quod. Labore praesentium numquam dolorum perferendis
+                    impedit tempora voluptatem fugiat doloribus!
+                    Ex distinctio necessitatibus quia deserunt. Ratione quia neque officia vel molestiae voluptas</p>
             </div>
         </div>
     </div>
@@ -54,26 +57,55 @@
             <div class="heading">
                 <h3>Proyek Saya</h3>
             </div>
+            <div id="myModal">
+                <div id="modalContent">
+                    <span id="closeModalIcon" onclick="closeClick()">&times;</span>
+                    <h2>My Project</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam asperiores ipsa quidem cum
+                        aliquid molestiae. Corrupti nobis sapiente, autem eos fuga saepe aliquid voluptatibus! Cum est
+                        dolor maxime iure ab!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda soluta minima nemo nam. Est,
+                        molestias quod labore laboriosam sequi id blanditiis asperiores repellendus dignissimos deleniti
+                        neque natus suscipit error veniam!</p>
+                </div>
+            </div>
+            <!-- </div> -->
             <div class="projects">
                 <div class="card-project fade" style="display: block;">
-                    <img src="1.png" alt="">
-                    <p>image1</p>
+                    <img src="/1.png" alt="">
+                    <h2>MyProject 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam rerum voluptatum eos fuga
+                        dignissimos sed. Perspiciatis quidem at error fuga laboriosam. Porro dolorum aliquam dolore
+                        veniam recusandae similique eos voluptas.</p>
+                    <button id="openModalButton" onclick="btnClick()" class="btn">View More</button>
                 </div>
                 <div class="card-project fade">
-                    <img src="2.png" alt="">
-                    <p>image2</p>
+                    <img src="/2.png" alt="">
+                    <h2>MyProject 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam rerum voluptatum eos fuga
+                        dignissimos sed. Perspiciatis quidem at error fuga laboriosam. Porro dolorum aliquam dolore
+                        veniam recusandae similique eos voluptas.</p>
+                    <button id="openModalButton" onclick="btnClick()" class="btn">View More</button>
                 </div>
                 <div class="card-project fade">
-                    <img src="3.png" alt="">
-                    <p>image3</p>
+                    <img src="/3.png" alt="">
+                    <h2>MyProject 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam rerum voluptatum eos fuga
+                        dignissimos sed. Perspiciatis quidem at error fuga laboriosam. Porro dolorum aliquam dolore
+                        veniam recusandae similique eos voluptas.</p>
+                    <button id="openModalButton" onclick="btnClick()" class="btn">View More</button>
                 </div>
                 <div class="card-project fade">
-                    <img src="1.png" alt="">
-                    <p>image4</p>
+                    <img src="/1.png" alt="">
+                    <h2>MyProject 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam rerum voluptatum eos fuga
+                        dignissimos sed. Perspiciatis quidem at error fuga laboriosam. Porro dolorum aliquam dolore
+                        veniam recusandae similique eos voluptas.</p>
+                    <button id="openModalButton" onclick="btnClick()" class="btn">View More</button>
                 </div>
                 <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
                 <a class="next" onclick="updateSlide(1)">&#10095;</a>
-            </div>     
+            </div>
         </div>
     </div>
     <div class="form-wrapper">
@@ -81,11 +113,41 @@
             <div class="heading">
                 <h3>Hubungi Saya</h3>
             </div>
-            <div class="form">
-                <input type="email" name="" id="" placeholder="Email(Diperlukan)">
-                <textarea placeholder="Message(Diperlukan)"></textarea>
-                <button>Kirim</button>
+            <div id="form" class="form">
+                <input required type="email" name="" id="mail" placeholder="Email(Diperlukan)">
+                <textarea required id="txtArea" placeholder="Message(Diperlukan)"></textarea>
+                <button onclick="require()">Kirim</button>
             </div>
+        </div>
+    </div>
+    <div class="FAQ-wrapper">
+        <div class="container faq-wrap">
+            <div class="contain">
+                <div class="heading">
+                    <h3>FAQ</h3>
+                </div>
+                <div class="section-wrapper">
+                    <button class="accordion">Section 1</button>
+                    <div class="panel">
+                        <p>Contoh 1</p>
+                        <p>Contoh 2</p>
+                        <p>Contoh 3</p>
+                    </div>
+                    <button class="accordion">Section 2</button>
+                    <div class="panel">
+                        <p>Contoh 1</p>
+                        <p>Contoh 2</p>
+                        <p>Contoh 3</p>
+                    </div>
+                    <button class="accordion">Section 3</button>
+                    <div class="panel">
+                        <p>Contoh 1</p>
+                        <p>Contoh 2</p>
+                        <p>Contoh 3</p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
     <footer>
@@ -98,5 +160,8 @@
             <a href="#">Hubungi Saya</a>
         </nav>
     </footer>
+
+<script src="script.js"></script>
 </body>
+
 </html>
