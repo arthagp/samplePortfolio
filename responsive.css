@@ -20,6 +20,21 @@
     
     .card-project{
         margin-left: 25%;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    .card-project p{
+        font-size: 10px;
+    }
+
+    .card-project h2{
+        font-size: 15px;
+    }
+    #openModalButton{
+        font-size: 10px;
+        width: 55px;
+        height: 30px;
     }
     textarea {
         width: 300px;
